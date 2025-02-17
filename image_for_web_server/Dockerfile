@@ -16,7 +16,7 @@ COPY . .
 USER 1001
 
 # Portu aç
-EXPOSE 80
+EXPOSE 5000
 
 # Flask uygulamasını başlat
 CMD ["python", "./app.py"]
