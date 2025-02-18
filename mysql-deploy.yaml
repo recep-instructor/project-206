@@ -4,6 +4,7 @@ metadata:
   labels:
     app: mysql
   name: mysql
+  namespace: rcpmrl-dev
 spec:
   replicas: 1
   selector:

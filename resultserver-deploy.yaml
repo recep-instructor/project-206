@@ -4,6 +4,7 @@ metadata:
   labels:
     app: resultserver-deploy
   name: resultserver-deploy
+  namespace: rcpmrl-dev
 spec:
   replicas: 1
   selector:
