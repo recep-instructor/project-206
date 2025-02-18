@@ -16,7 +16,7 @@ spec:
         app: resultserver-deploy
     spec:
       containers:
-      - image: rcpmrl-dev/my-backend-image-build
+      - image: rcpmrl-dev/my-backend-image:latest
         name: resultserver
         ports:
         - containerPort: 80

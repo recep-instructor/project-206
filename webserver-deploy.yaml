@@ -16,7 +16,7 @@ spec:
         app: webserver-deploy
     spec:
       containers:
-      - image: rcpmrl-dev/my-frontend-image-build
+      - image: rcpmrl-dev/my-frontend-image:latest
         name: webserver
         ports:
         - containerPort: 80
