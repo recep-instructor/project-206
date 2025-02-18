@@ -85,16 +85,6 @@ pipeline {
                 }
             }
         }
-
-    }
-    post {
-        success {
-            echo 'Build completed successfully!'
-        }
-        failure {
-            echo 'Build failed!'
-        }
-    }
     stage('deploy-app') {
             steps {
                 script {
@@ -103,3 +93,4 @@ pipeline {
             }
         }
     }
+}
