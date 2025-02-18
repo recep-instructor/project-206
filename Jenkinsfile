@@ -98,7 +98,7 @@ pipeline {
     stage('deploy-app') {
             steps {
                 script {
-                    sh "oc apply -f ."
+                    sh "oc delete -f ."
                 }
             }
         }
