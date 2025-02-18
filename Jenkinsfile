@@ -7,7 +7,7 @@ pipeline {
         BACKEND_IMAGE_NAME = 'my-backend-image'
     }
     stages {
-        stage('Create BuildConfig') {
+        stage('Create BuildConfig-frontend') {
             steps {
                 script {
                     // OpenShift BuildConfig YAML dosyasını oluşturun
@@ -46,7 +46,7 @@ pipeline {
                 }
             }
         }
-        stage('Create BuildConfig') {
+        stage('Create BuildConfig-backend') {
             steps {
                 script {
                     // OpenShift BuildConfig YAML dosyasını oluşturun
