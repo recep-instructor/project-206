@@ -6,12 +6,6 @@ pipeline {
         FRONTEND_IMAGE_NAME = 'my-frontend-image' // OpenShift'de oluşturulacak imaj adı
     }
     stages {
-        stage('Checkout') {
-            steps {
-                // GitHub'dan kaynak kodu çekin
-                git GITHUB_REPO
-            }
-        }
         stage('Create BuildConfig') {
             steps {
                 script {
