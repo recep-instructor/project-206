@@ -38,7 +38,7 @@ pipeline {
                 }
             }
         }
-        stage('Start Build') {
+        stage('Start Build-frontend') {
             steps {
                 script {
                     // Build'i başlatın
@@ -77,7 +77,7 @@ pipeline {
                 }
             }
         }
-        stage('Start Build') {
+        stage('Start Build-backend') {
             steps {
                 script {
                     // Build'i başlatın
