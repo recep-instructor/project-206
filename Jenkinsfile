@@ -88,7 +88,13 @@ pipeline {
     stage('deploy-app') {
             steps {
                 script {
-                    sh "oc apply -f ."
+                    sh "oc apply -f mysql-deploy.yaml"
+                    sh "oc apply -f mysql-svc.yaml"
+                    sh "oc apply -f mysql-pvc.yaml"
+                    sh "oc apply -f webserver-deploy.yaml"
+                    sh "oc apply -f webserver-service.yaml"
+                    sh "oc apply -f resultserver-deploy.yaml"
+                    sh "oc apply -f resultserver-service.yaml"
                 }
             }
         }
